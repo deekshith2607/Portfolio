@@ -20,8 +20,8 @@ const Projets = () => {
       desc: "A modern and responsive personal portfolio website built using React and Tailwind CSS.",
       tech: ["React", "Tailwind CSS"],
       image: portfolio,
-      github: "#",
-      live: "#",
+      github: "https://github.com/deekshith2607/Portfolio",
+      live: "https://project-yix4l.vercel.app/",
       isLive: true
     },
     {

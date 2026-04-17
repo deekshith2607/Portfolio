@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { RiMenuLine, RiCloseLine } from "@remixicon/react";
-import {Link} from "react-scroll"
+import { Link } from "react-scroll";
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -24,14 +24,27 @@ const Navbar = () => {
             className="flex space-x-6"
             style={{ color: "var(--text-secondary)" }}
           >
-            <li className="cursor-pointer hover:text-white"><Link to="heroSecton" smooth={true} duration={500}>Home</Link> </li>
-            <li className="cursor-pointer hover:text-white"><Link to="about" smooth={true} duration={500}>About</Link></li>
-            <li className="cursor-pointer hover:text-white"><Link to="skill" smooth={true} duration={500}>Skills</Link></li>
-            <li className="cursor-pointer hover:text-white"><Link to="contact" smooth={true}>Contact</Link></li>
+            <li className="cursor-pointer hover:text-white">
+              <Link to="heroSecton" smooth={true} duration={500}>
+                Home
+              </Link>{" "}
+            </li>
+            <li className="cursor-pointer hover:text-white">
+              <Link to="about" smooth={true} duration={500}>
+                About
+              </Link>
+            </li>
+            <li className="cursor-pointer hover:text-white">
+              <Link to="skill" smooth={true} duration={500}>
+                Skills
+              </Link>
+            </li>
           </ul>
 
           <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-            Contact
+            <Link to="contact" smooth={true}>
+              Contact
+            </Link>{" "}
           </button>
         </div>
 
@@ -72,22 +85,36 @@ const Navbar = () => {
         }`}
       >
         <ul className="flex flex-col gap-4 text-(--text-secondary)">
-          <li onClick={() => setMenuOpen(false)} className="cursor-pointer hover:text-white">
-          <Link to="heroSection" smooth={true} duration={500}>Home</Link> 
+          <li
+            onClick={() => setMenuOpen(false)}
+            className="cursor-pointer hover:text-white"
+          >
+            <Link to="heroSection" smooth={true} duration={500}>
+              Home
+            </Link>
           </li>
-          <li onClick={() => setMenuOpen(false) } className="cursor-pointer hover:text-white">
-           <Link to="about" smooth={true} duration={500}>About</Link>
+          <li
+            onClick={() => setMenuOpen(false)}
+            className="cursor-pointer hover:text-white"
+          >
+            <Link to="about" smooth={true} duration={500}>
+              About
+            </Link>
           </li>
-          <li onClick={() => setMenuOpen(false)} className="cursor-pointer hover:text-white">
-            <Link to="skill" smooth={true} duration={500}>Skills</Link>
-          </li>
-          <li onClick={() => setMenuOpen(false)} className="cursor-pointer hover:text-white">
-            <Link to="contact" smooth={true}>Contact</Link>
+          <li
+            onClick={() => setMenuOpen(false)}
+            className="cursor-pointer hover:text-white"
+          >
+            <Link to="skill" smooth={true} duration={500}>
+              Skills
+            </Link>
           </li>
         </ul>
 
         <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-fit">
-          Contact
+          <Link to="contact" smooth={true}>
+            Contact
+          </Link>
         </button>
       </div>
     </>

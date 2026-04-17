@@ -1,3 +1,5 @@
+import { Link } from "react-scroll";
+
 const Footer = () => {
   return (
     <footer className="w-full mt-20 border-t border-white/10 bg-black/20 backdrop-blur-md">
@@ -16,10 +18,15 @@ const Footer = () => {
 
         {/* Middle Links */}
         <div className="flex gap-6 text-sm text-gray-300">
-          <a href="#home" className="hover:text-white transition">Home</a>
-          <a href="#projects" className="hover:text-white transition">Projects</a>
-          <a href="#skills" className="hover:text-white transition">Skills</a>
-          <a href="#contact" className="hover:text-white transition">Contact</a>
+         <ul
+                     className="flex space-x-6"
+                     style={{ color: "var(--text-secondary)" }}
+                   >
+                     <li className="cursor-pointer hover:text-white"><Link to="heroSecton" smooth={true} duration={500}>Home</Link> </li>
+                     <li className="cursor-pointer hover:text-white"><Link to="about" smooth={true} duration={500}>About</Link></li>
+                     <li className="cursor-pointer hover:text-white"><Link to="skill" smooth={true} duration={500}>Skills</Link></li>
+                     <li className="cursor-pointer hover:text-white"><Link to="contact" smooth={true}>Contact</Link></li>
+                   </ul>
         </div>
 
 

@@ -3,7 +3,7 @@ import img from "../assets/developer.png";
 import { motion } from "motion/react";
 const Aboutrleft = () => {
   return (
-    <motion.div className= "flex items-center flex-col justify-center md:mt-10 w-1/2 h-full"
+    <motion.div className= "flex items-center flex-col justify-center mt-10 w-1/2 h-full"
     
       initial={{ opacity: 0, y: 50 }}   // before visible
       whileInView={{ opacity: 1, y: 0 }} // when in view
