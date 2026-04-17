@@ -1,9 +1,11 @@
 import React from 'react'
-import Navbar from './ccomponents/Navbar'
-import HeroSection from './ccomponents/HeroSection'
-import AboutSection from './ccomponents/AboutSection'
-import Skill from './ccomponents/Skill'
-import Projets from './ccomponents/Projets'
+import Navbar from './components/Navbar'
+import HeroSection from './components/HeroSection'
+import AboutSection from './components/AboutSection'
+import Skill from './components/Skill'
+import Projets from './components/Projets'
+import Contact from './components/Conact'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
@@ -19,10 +21,18 @@ const App = () => {
       <section id='skill'>
        <Skill />
       </section>
-      <section>
+
+      <section id='project'>
         <Projets />
       </section>
+
+      <section id='contact'>
+        <Contact />
+      </section>
+      
+      <Footer />
     </div>
+    
   )
 }
 

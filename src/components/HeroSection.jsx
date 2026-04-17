@@ -1,7 +1,8 @@
 import React from "react";
 import TypeEffect from "./TypeEffect";
 import { motion } from "motion/react"
-
+import SocialMedia from "./SocialMedia";
+import { Link } from "react-scroll";
 
 const HeroSection = () => {
   return (
@@ -41,11 +42,13 @@ const HeroSection = () => {
             Download Resume
           </motion.button>
          
-          <motion.button whileHover={{ scale: 1.1 }}  className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-2 text-sm rounded ml-4">
-            Contact Me
+          <motion.button whileHover={{ scale: 1.1 }}  className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-2 text-sm rounded ml-4">
+            <Link to="contact" smooth={true} duration={500}>Contact me</Link>
           </motion.button>
         </div>{" "}
       </div>
+      
+      <SocialMedia  />
     </motion.div>
   );
 };

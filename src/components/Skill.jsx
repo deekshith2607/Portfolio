@@ -21,16 +21,16 @@ const Skill = () => {
       </h2>
      
       <p
-        class="text-gray-400 max-w-xl font-mono leading-relaxed text-center"
+        className="text-gray-400 max-w-xl font-mono leading-relaxed text-center"
         style={{ color: "var(--text-secondary)" }}
       >
         Frontend developer specializing in
-        <span class="font-semibold drop-shadow-[0_0_8px_rgba(59,130,246,0.8)] text-blue-500">
+        <span className="font-semibold drop-shadow-[0_0_8px_rgba(59,130,246,0.8)] text-blue-500">
           {" "}
           React
         </span>{" "}
         and
-        <span class=" font-semibold text-blue-500 drop-shadow-[0_0_8px_rgba(59,130,246,0.8)]">
+        <span className=" font-semibold text-blue-500 drop-shadow-[0_0_8px_rgba(59,130,246,0.8)]">
           {" "}
           modern UI design
         </span>

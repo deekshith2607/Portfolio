@@ -3,7 +3,7 @@ import portfolio from "../assets/portfolio.png";
 import wheather from "../assets/wheather.png";
 import employee from "../assets/employee.png";
 import expense from "../assets/expense.png";
-
+import { motion } from "motion/react";
 const Projets = () => {
   const projects = [
     {
@@ -45,7 +45,13 @@ const Projets = () => {
   ];
 
   return (
-    <div className="w-full py-20 px-6 flex gap-5 flex-col items-center">
+    <motion.div className="w-full py-20 px-6 flex gap-5 flex-col items-center"
+      initial={{ opacity: 0, y: 50 }}   // before visible
+      whileInView={{ opacity: 1, y: 0 }} // when in view
+      transition={{ duration: 0.6, ease: "easeInOut" }}
+      viewport={{ once: true }} // animate only once
+    >
+      
       {/* Heading */}
       <h2
         className="text-sm md:text-3xl px-4 py-2 mt-5 font-mono border-2 rounded-2xl  "
@@ -66,11 +72,11 @@ const Projets = () => {
                        backdrop-blur-md hover:scale-105 transition-all duration-300"
           >
             {/* Image */}
-            <div className="h-60 w-full overflow-hidden">
+            <div className="h-45 md:h-60 p-2 w-full overflow-hidden">
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-full object-cover"
+                className="w-full h-full rounded object-fit"
               />
             </div>
 
@@ -121,7 +127,7 @@ const Projets = () => {
           </div>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

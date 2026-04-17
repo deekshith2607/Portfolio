@@ -26,8 +26,8 @@ const Navbar = () => {
           >
             <li className="cursor-pointer hover:text-white"><Link to="heroSecton" smooth={true} duration={500}>Home</Link> </li>
             <li className="cursor-pointer hover:text-white"><Link to="about" smooth={true} duration={500}>About</Link></li>
-            <li className="cursor-pointer hover:text-white">Skills</li>
-            <li className="cursor-pointer hover:text-white">Projects</li>
+            <li className="cursor-pointer hover:text-white"><Link to="skill" smooth={true} duration={500}>Skills</Link></li>
+            <li className="cursor-pointer hover:text-white"><Link to="contact" smooth={true}>Contact</Link></li>
           </ul>
 
           <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
@@ -79,10 +79,10 @@ const Navbar = () => {
            <Link to="about" smooth={true} duration={500}>About</Link>
           </li>
           <li onClick={() => setMenuOpen(false)} className="cursor-pointer hover:text-white">
-            Skills
+            <Link to="skill" smooth={true} duration={500}>Skills</Link>
           </li>
           <li onClick={() => setMenuOpen(false)} className="cursor-pointer hover:text-white">
-            Projects
+            <Link to="contact" smooth={true}>Contact</Link>
           </li>
         </ul>
 
